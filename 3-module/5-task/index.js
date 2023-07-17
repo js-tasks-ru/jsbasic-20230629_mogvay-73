@@ -10,9 +10,8 @@ function getMinMax(str) {
 
   arrNumber.sort(compareNumeric);
 
-  let user = {};
-  user.min = arrNumber[0];
-  user.max = arrNumber.at(-1);
-
-  return user;
+  return {
+    min: arrNumber[0],
+    max: arrNumber.at(-1),
+  };
 }
